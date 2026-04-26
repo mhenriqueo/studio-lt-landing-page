@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #4A3826;
+    background-color: #F5EFE6;
+  }
+
+  ::selection {
+    background-color: #C6A46C;
+    color: #FFFFFF;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-7 py-3.5 bg-gold-400 text-white font-medium rounded-full
+           transition-all duration-300 ease-out
+           hover:bg-gold-500 hover:shadow-lg hover:shadow-gold-400/30 hover:-translate-y-0.5
+           active:translate-y-0 active:shadow-md;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-7 py-3.5 bg-transparent text-gold-700 font-medium rounded-full
+           border-2 border-gold-400
+           transition-all duration-300 ease-out
+           hover:bg-gold-400 hover:text-white hover:shadow-lg hover:shadow-gold-400/30 hover:-translate-y-0.5
+           active:translate-y-0 active:shadow-md;
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24;
+  }
+
+  .section-title {
+    @apply font-serif text-3xl sm:text-4xl lg:text-5xl text-gold-800 text-center;
+  }
+
+  .section-subtitle {
+    @apply font-script text-xl sm:text-2xl text-gold-400 text-center mt-2;
+  }
+
+  .card-elegant {
+    @apply bg-white/60 backdrop-blur-sm rounded-2xl border border-gold-200/50
+           shadow-sm transition-all duration-300 ease-out
+           hover:shadow-xl hover:shadow-gold-300/20 hover:-translate-y-1;
+  }
+
+  .fabric-texture {
+    background-image:
+      radial-gradient(ellipse at 20% 50%, rgba(198, 164, 108, 0.08) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 20%, rgba(198, 164, 108, 0.06) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 80%, rgba(139, 107, 74, 0.05) 0%, transparent 50%);
+  }
+
+  .silk-gradient {
+    background: linear-gradient(
+      135deg,
+      #F5EFE6 0%,
+      #F7EDE0 25%,
+      #F5EFE6 50%,
+      #F0DFC8 75%,
+      #F5EFE6 100%
+    );
+    background-size: 400% 400%;
+    animation: silkShimmer 8s ease infinite;
+  }
+
+  .gold-shimmer {
+    background: linear-gradient(
+      90deg,
+      #C6A46C 0%,
+      #D4BC96 50%,
+      #C6A46C 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: goldShimmer 3s ease infinite;
+  }
+
+  .divider-ornament {
+    @apply flex items-center justify-center gap-3 my-6;
+  }
+
+  .divider-ornament::before,
+  .divider-ornament::after {
+    content: '';
+    @apply h-px w-16 sm:w-24 bg-gradient-to-r from-transparent to-gold-300;
+  }
+
+  .divider-ornament::after {
+    @apply from-gold-300 to-transparent;
+  }
+}
+
+@layer utilities {
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-400 { animation-delay: 400ms; }
+  .delay-500 { animation-delay: 500ms; }
+  .delay-600 { animation-delay: 600ms; }
+  .delay-700 { animation-delay: 700ms; }
+  .delay-800 { animation-delay: 800ms; }
+}
+
+@keyframes silkShimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes goldShimmer {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes leafSway {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+.leaf-sway {
+  animation: leafSway 4s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+.navbar-blur {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.gallery-item img {
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+  filter: brightness(1.05);
+}
+
+.testimonial-card {
+  position: relative;
+}
+
+.testimonial-card::before {
+  content: '\201C';
+  position: absolute;
+  top: -0.5rem;
+  left: 1rem;
+  font-size: 4rem;
+  font-family: 'Playfair Display', serif;
+  color: #C6A46C;
+  opacity: 0.2;
+  line-height: 1;
+}
