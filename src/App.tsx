@@ -1,6 +1,5 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import ImageConsultancy from './components/ImageConsultancy';
 import Services from './components/Services';
 import Gallery from './components/Gallery';
 import About from './components/About';
@@ -14,7 +13,6 @@ function App() {
         <div className="min-h-screen bg-gold-100">
             <Navbar />
             <Hero />
-            <ImageConsultancy />
             <Services />
             <Gallery />
             <About />
