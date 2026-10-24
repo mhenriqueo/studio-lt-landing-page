@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -10,17 +11,21 @@ import FloatingButtons from './components/FloatingButtons';
 
 function App() {
     return (
-        <div className="min-h-screen bg-gold-100">
-            <Navbar />
-            <Hero />
-            <Services />
-            <Gallery />
-            <About />
-            <Testimonials />
-            <FinalCTA />
-            <Footer />
-            <FloatingButtons />
-        </div>
+        <>
+            <div className="min-h-screen bg-gold-100">
+                <Navbar />
+                <Hero />
+                <Services />
+                <Gallery />
+                <About />
+                <Testimonials />
+                <FinalCTA />
+                <Footer />
+                <FloatingButtons />
+            </div>
+
+            <Analytics />
+        </>
     );
 }
 
