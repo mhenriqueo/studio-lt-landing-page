@@ -1,11 +1,9 @@
 import { MessageCircle, Instagram } from 'lucide-react';
-
-const WHATSAPP_URL = 'https://wa.me/5511992340676?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20ensaio%20fotogr%C3%A1fico.';
-const INSTAGRAM_URL = 'https://www.instagram.com/studio.l_t?igsh=MXFkaGsxN2dtM2E5Ng%3D%3D&utm_source=qr';
+import { WHATSAPP_URL, INSTAGRAM_URL } from '@/data/contato';
 
 export default function FloatingButtons() {
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-center gap-3">
       <a
         href={INSTAGRAM_URL}
         target="_blank"
@@ -20,7 +18,7 @@ export default function FloatingButtons() {
         href={WHATSAPP_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className="group flex items-center justify-center w-14 h-14 bg-green-500 text-white rounded-full shadow-lg shadow-green-500/30 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-green-500/40 animate-float"
+        className="group flex items-center justify-center w-14 h-14 bg-green-500 text-white rounded-full shadow-lg shadow-green-500/30 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-green-500/40"
         aria-label="WhatsApp"
       >
         <MessageCircle className="w-6 h-6" />

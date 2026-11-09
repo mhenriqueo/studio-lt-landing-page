@@ -1,5 +1,5 @@
 import { Palette, Shirt, Sparkles } from 'lucide-react';
-import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 export default function ImageConsultancy() {
     const { ref, isVisible } = useScrollAnimation(0.15);
@@ -78,7 +78,7 @@ export default function ImageConsultancy() {
                     <div className={`relative ${isVisible ? 'animate-slide-in-right' : 'opacity-0 translate-x-10'}`}>
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-gold-300/15">
                             <img
-                                src="/consultora.jpg"
+                                src="/images/outros/consultora.jpg"
                                 alt="Consultoria de imagem e estilo"
                                 className="w-full h-[400px] sm:h-[500px] object-cover"
                                 loading="lazy"

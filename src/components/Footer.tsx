@@ -1,3 +1,4 @@
+import { BrandName } from './Navbar';
 import { Camera, Heart } from 'lucide-react';
 
 const INSTAGRAM_URL = 'https://www.instagram.com/studio.l_t?igsh=MXFkaGsxN2dtM2E5Ng%3D%3D&utm_source=qr';
@@ -9,9 +10,7 @@ export default function Footer() {
         <div className="flex flex-col items-center text-center">
           <div className="flex items-center gap-2 mb-4">
             <Camera className="w-5 h-5 text-gold-400" strokeWidth={1.5} />
-            <span className="font-serif text-lg text-gold-300">
-              Studio <span className="font-script text-gold-400">L&T</span>
-            </span>
+            <BrandName className="font-serif text-lg text-gold-300" />
           </div>
 
           <p className="text-sm max-w-md leading-relaxed mb-4">
@@ -32,7 +31,7 @@ export default function Footer() {
           <div className="w-full h-px bg-gold-700/30 mb-6" />
 
           <p className="text-xs flex items-center gap-1">
-            Feito com <Heart className="w-3 h-3 text-gold-400" fill="currentColor" /> por Studio L&T Fotografia
+            Feito com <Heart className="w-3 h-3 text-gold-400" fill="currentColor" /> por Studio L & T Fotografia
           </p>
         </div>
       </div>

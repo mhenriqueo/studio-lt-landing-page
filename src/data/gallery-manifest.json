@@ -1,0 +1,50 @@
+{
+  "casamento": [
+    "/images/servicos/casamento/temporaria-01.jpg",
+    "/images/servicos/casamento/temporaria-02.jpg",
+    "/images/servicos/casamento/temporaria-03.jpg",
+    "/images/servicos/casamento/temporaria-04.jpg"
+  ],
+  "eventos": [
+    "/images/servicos/eventos/temporaria-01.jpg",
+    "/images/servicos/eventos/temporaria-02.jpg",
+    "/images/servicos/eventos/temporaria-03.jpg",
+    "/images/servicos/eventos/temporaria-04.jpg"
+  ],
+  "gestante": [
+    "/images/servicos/gestante/imagem-01.jpg",
+    "/images/servicos/gestante/imagem-02.jpg",
+    "/images/servicos/gestante/temporaria-01.jpg",
+    "/images/servicos/gestante/temporaria-02.jpg"
+  ],
+  "smash-the-cake": [
+    "/images/servicos/smash-the-cake/imagem-01.jpg",
+    "/images/servicos/smash-the-cake/imagem-02.jpg",
+    "/images/servicos/smash-the-cake/temporaria-01.jpg",
+    "/images/servicos/smash-the-cake/temporaria-02.jpg"
+  ],
+  "ensaio-kids": [
+    "/images/servicos/ensaio-kids/imagem-01.jpg",
+    "/images/servicos/ensaio-kids/temporaria-01.jpg",
+    "/images/servicos/ensaio-kids/temporaria-02.jpg",
+    "/images/servicos/ensaio-kids/temporaria-03.jpg"
+  ],
+  "casal-familiar": [
+    "/images/servicos/casal-familiar/imagem-01.jpg",
+    "/images/servicos/casal-familiar/imagem-02.jpg",
+    "/images/servicos/casal-familiar/imagem-03.jpeg",
+    "/images/servicos/casal-familiar/temporaria-01.jpg"
+  ],
+  "datas-comemorativas": [
+    "/images/servicos/datas-comemorativas/temporaria-01.jpg",
+    "/images/servicos/datas-comemorativas/temporaria-02.jpg",
+    "/images/servicos/datas-comemorativas/temporaria-03.jpg",
+    "/images/servicos/datas-comemorativas/temporaria-04.jpg"
+  ],
+  "bday": [
+    "/images/servicos/bday/imagem-01.jpg",
+    "/images/servicos/bday/temporaria-01.jpg",
+    "/images/servicos/bday/temporaria-02.jpg",
+    "/images/servicos/bday/temporaria-03.jpg"
+  ]
+}
