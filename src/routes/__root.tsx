@@ -87,7 +87,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Ensaios fotográficos profissionais para eternizar momentos únicos." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-          ],
+      { name: "google-site-verification", content: "C1DNh17LgJw60auKUZfcb1tJbmstTuc76T1BRRc_Gr4" },
+    ],
     links: [
       {
         rel: "stylesheet",

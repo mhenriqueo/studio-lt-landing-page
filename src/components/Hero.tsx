@@ -64,7 +64,7 @@ export default function Hero() {
             <img
               src="/images/hero/imagem-principal.jpeg"
               alt="Ensaio fotográfico profissional"
-              className="relative w-full h-[360px] sm:h-[440px] lg:h-[520px] object-cover rounded-2xl shadow-2xl shadow-gold-300/20 border border-gold-200/30"
+              className="relative w-full h-[360px] sm:h-[440px] lg:h-[520px] object-cover object-[center_30%] rounded-2xl shadow-2xl shadow-gold-300/20 border border-gold-200/30"
               loading="eager"
             />
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-gold-900/10 to-transparent" />
