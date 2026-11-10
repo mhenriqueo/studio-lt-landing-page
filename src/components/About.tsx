@@ -1,5 +1,5 @@
 import { Heart, Award, Camera } from 'lucide-react';
-import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 export default function About() {
   const { ref, isVisible } = useScrollAnimation(0.15);
@@ -20,8 +20,8 @@ export default function About() {
           <div className={`relative ${isVisible ? 'animate-slide-in-left' : 'opacity-0 -translate-x-10'}`}>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-gold-300/15">
               <img
-                src="/fotografas-two.jpg"
-                alt="Studio L&T Fotografia"
+                src="/images/sobre/imagem-estudio.jpg"
+                alt="Studio L & T Fotografia"
                 className="w-full h-[400px] sm:h-[500px] object-cover"
                 loading="lazy"
               />
@@ -40,7 +40,7 @@ export default function About() {
             </h3>
 
             <p className="text-gold-700/80 leading-relaxed mb-6">
-              No Studio L&T Fotografia, acreditamos que os momentos mais preciosos da vida
+              No Studio L & T Fotografia, acreditamos que os momentos mais preciosos da vida
               merecem ser eternizados com arte, sensibilidade e dedicação. Cada ensaio é
               pensado com carinho para que você possa reviver essas memórias com a mesma
               emoção do dia em que aconteceram.
