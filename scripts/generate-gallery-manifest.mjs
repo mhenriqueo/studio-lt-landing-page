@@ -1,8 +1,8 @@
-import { readdirSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, readdirSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-export const galleryCategories = ['casamento', 'eventos', 'gestante', 'smash-the-cake', 'ensaio-kids', 'casal-familiar', 'datas-comemorativas', 'bday'];
+export const galleryCategories = ['casamento', 'casamento-civil', 'eventos', 'gestante', 'smash-the-cake', 'ensaio-kids', 'newborn', 'casal-familiar', 'datas-comemorativas', 'bday'];
 export const galleryDirectory = 'public/images/servicos';
 const supportedImage = /\.(jpe?g|png|webp|avif|gif)$/i;
 const naturalOrder = new Intl.Collator('pt-BR', { numeric: true, sensitivity: 'base' });
@@ -10,6 +10,8 @@ const naturalOrder = new Intl.Collator('pt-BR', { numeric: true, sensitivity: 'b
 export function collectGalleryManifest(rootDirectory) {
   return Object.fromEntries(galleryCategories.map((category) => {
     const directory = resolve(rootDirectory, galleryDirectory, category);
+    // Git does not keep empty folders: a missing folder is an empty gallery.
+    if (!existsSync(directory)) return [category, []];
     const files = readdirSync(directory, { withFileTypes: true })
       .filter((entry) => entry.isFile() && !entry.name.startsWith('.') && supportedImage.test(entry.name))
       .map((entry) => entry.name)
@@ -31,5 +33,5 @@ export function generateGalleryManifest(rootDirectory) {
 
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   generateGalleryManifest(process.cwd());
-  console.log('Manifesto das oito galerias atualizado.');
+  console.log(`Manifesto das ${galleryCategories.length} galerias atualizado.`);
 }

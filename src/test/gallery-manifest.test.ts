@@ -17,13 +17,13 @@ function add(root: string, category: string, name: string) {
 afterEach(() => { for (const root of roots.splice(0)) rmSync(root, { recursive: true, force: true }); });
 
 describe('Folder-based galleries', () => {
-  it('discovers additions and removals in all eight isolated categories with variable counts', () => {
+  it('discovers additions and removals in all isolated categories with variable counts', () => {
     const root = fixture();
     galleryCategories.forEach((category, index) => {
       for (let n = 1; n <= index + 4; n++) add(root, category, `imagem-${n}.jpg`);
     });
     let manifest = collectGalleryManifest(root);
-    expect(Object.keys(manifest)).toHaveLength(8);
+    expect(Object.keys(manifest)).toHaveLength(galleryCategories.length);
     galleryCategories.forEach((category, index) => {
       expect(manifest[category]).toHaveLength(index + 4);
       expect(manifest[category]?.every((src) => src.startsWith(`/images/servicos/${category}/`))).toBe(true);
@@ -50,5 +50,28 @@ describe('Folder-based galleries', () => {
     for (const name of [...images, 'notes.txt', 'image.svg', '.hidden.jpg']) add(root, 'casamento', name);
     mkdirSync(resolve(root, galleryDirectory, 'casamento', 'nested.jpg'));
     expect(collectGalleryManifest(root)['casamento']).toEqual(images.map((name) => `/images/servicos/casamento/${name}`));
+  });
+
+  it('includes Casamento Civil right after Casamento and Newborn right after Ensaio Kids', () => {
+    expect(galleryCategories).toEqual(['casamento', 'casamento-civil', 'eventos', 'gestante', 'smash-the-cake', 'ensaio-kids', 'newborn', 'casal-familiar', 'datas-comemorativas', 'bday']);
+  });
+
+  it('keeps Casamento Civil and Newborn photos separate from each other and from Casamento', () => {
+    const root = fixture();
+    add(root, 'casamento', 'imagem-01.jpg');
+    add(root, 'casamento-civil', 'imagem-01.jpg');
+    add(root, 'newborn', 'imagem-01.jpg');
+    const manifest = collectGalleryManifest(root);
+    expect(manifest['casamento']).toEqual(['/images/servicos/casamento/imagem-01.jpg']);
+    expect(manifest['casamento-civil']).toEqual(['/images/servicos/casamento-civil/imagem-01.jpg']);
+    expect(manifest['newborn']).toEqual(['/images/servicos/newborn/imagem-01.jpg']);
+  });
+
+  it('treats a missing or empty category folder as an empty gallery without failing', () => {
+    const root = fixture();
+    rmSync(resolve(root, galleryDirectory, 'newborn'), { recursive: true });
+    const manifest = collectGalleryManifest(root);
+    expect(manifest['newborn']).toEqual([]);
+    expect(manifest['casamento-civil']).toEqual([]);
   });
 });

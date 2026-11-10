@@ -22,9 +22,17 @@ export default function GaleriaFotos({ fotos }: { fotos: Foto[] }) {
 
   const atual = aberta === null ? null : fotos[aberta];
 
+  if (fotos.length === 0) {
+    return (
+      <p className="py-16 text-center text-gold-600/80">
+        Em breve, novas fotografias deste ensaio.
+      </p>
+    );
+  }
+
   return (
     <>
-      <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 min-[120rem]:grid-cols-6 gap-4 sm:gap-5">
+      <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-5">
         {fotos.map((foto, i) => (
           <button
             key={foto.src}

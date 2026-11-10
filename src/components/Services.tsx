@@ -18,7 +18,7 @@ export default function Services() {
           </div>
         </div>
 
-        <div className="mt-12 grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 min-[120rem]:grid-cols-6">
+        <div className="mt-12 grid grid-cols-2 gap-4 sm:gap-6 xl:grid-cols-4">
           {servicos.map((service, index) => (
             <div
               key={service.slug}
@@ -32,12 +32,16 @@ export default function Services() {
                 params={{ slug: service.slug }}
                 className="block gallery-item rounded-none aspect-[4/5]"
               >
-                <img
-                  src={service.previa}
-                  alt={service.nome}
-                  loading="lazy"
-                  className="w-full h-full object-cover"
-                />
+                {service.previa ? (
+                  <img
+                    src={service.previa}
+                    alt={service.nome}
+                    loading="lazy"
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <span className="block w-full h-full bg-gold-100 fabric-texture" aria-hidden="true" />
+                )}
               </Link>
               <div className="p-2 sm:p-6 text-center">
                 <h3 className="font-serif text-xl text-gold-800 mb-4 [overflow-wrap:anywhere]">{service.nome}</h3>

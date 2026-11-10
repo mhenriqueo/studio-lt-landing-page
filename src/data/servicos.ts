@@ -37,6 +37,17 @@ const serviceDetails: Omit<Servico, "fotos">[] = [
     previa: `${base}/casamento/temporaria-01.jpg`,
   },
   {
+    slug: "casamento-civil",
+    nome: "Casamento Civil",
+    titulo: "Fotografia de Casamento Civil",
+    descricao:
+      "O sim que muda tudo, registrado com delicadeza. Cobertura da cerimônia civil, dos detalhes e dos abraços de quem estava lá.",
+    metaTitulo: "Fotografia de Casamento Civil | Studio L & T",
+    metaDescricao:
+      "Fotografia de casamento civil no Studio L & T: cerimônia no cartório, assinaturas, alianças e a emoção do sim registrados com sensibilidade.",
+    previa: `${base}/casamento-civil/temporaria-01.jpg`,
+  },
+  {
     slug: "eventos",
     nome: "Eventos",
     titulo: "Fotografia de Eventos",
@@ -81,6 +92,17 @@ const serviceDetails: Omit<Servico, "fotos">[] = [
     previa: `${base}/ensaio-kids/imagem-01.jpg`,
   },
   {
+    slug: "newborn",
+    nome: "Newborn",
+    titulo: "Ensaio Newborn",
+    descricao:
+      "Os primeiros dias, para sempre. Um ensaio sereno e acolhedor que guarda cada detalhe do seu recém-nascido.",
+    metaTitulo: "Ensaio Newborn | Studio L & T",
+    metaDescricao:
+      "Ensaio newborn no Studio L & T: fotografias delicadas e acolhedoras dos primeiros dias do seu bebê.",
+    previa: `${base}/newborn/temporaria-01.jpg`,
+  },
+  {
     slug: "casal-familiar",
     nome: "Casal / Familiar",
     titulo: "Ensaios de Casal e Familiar",
@@ -117,6 +139,7 @@ const serviceDetails: Omit<Servico, "fotos">[] = [
 
 const categoryCaptions: Record<string, string> = {
   gestante: "Ensaio Gestante",
+  newborn: "Ensaio Newborn",
   "casal-familiar": "Ensaio Casal / Familiar",
 };
 const existingCaptions: Record<string, string> = {

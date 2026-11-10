@@ -1,50 +1,132 @@
 {
   "casamento": [
-    "/images/servicos/casamento/temporaria-01.jpg",
-    "/images/servicos/casamento/temporaria-02.jpg",
-    "/images/servicos/casamento/temporaria-03.jpg",
-    "/images/servicos/casamento/temporaria-04.jpg"
+    "/images/servicos/casamento/imagem-01.JPG",
+    "/images/servicos/casamento/imagem-02.JPG",
+    "/images/servicos/casamento/imagem-03.jpg",
+    "/images/servicos/casamento/imagem-04.JPG",
+    "/images/servicos/casamento/imagem-05.JPG",
+    "/images/servicos/casamento/imagem-06.JPG",
+    "/images/servicos/casamento/imagem-07.JPG",
+    "/images/servicos/casamento/imagem-08.JPG",
+    "/images/servicos/casamento/imagem-09.JPG",
+    "/images/servicos/casamento/imagem-10.JPG",
+    "/images/servicos/casamento/imagem-11.JPG",
+    "/images/servicos/casamento/imagem-12.JPG",
+    "/images/servicos/casamento/imagem-13.JPG",
+    "/images/servicos/casamento/imagem-14.JPG",
+    "/images/servicos/casamento/imagem-15.jpg",
+    "/images/servicos/casamento/imagem-16.jpg"
+  ],
+  "casamento-civil": [
+    "/images/servicos/casamento-civil/imagem-01.JPG",
+    "/images/servicos/casamento-civil/imagem-02.jpg",
+    "/images/servicos/casamento-civil/imagem-03.jpeg",
+    "/images/servicos/casamento-civil/imagem-04.jpg",
+    "/images/servicos/casamento-civil/imagem-05.jpg",
+    "/images/servicos/casamento-civil/imagem-06.jpg",
+    "/images/servicos/casamento-civil/imagem-07.jpg",
+    "/images/servicos/casamento-civil/imagem-08.jpg",
+    "/images/servicos/casamento-civil/imagem-09.jpg",
+    "/images/servicos/casamento-civil/imagem-10.jpg",
+    "/images/servicos/casamento-civil/imagem-11.jpg",
+    "/images/servicos/casamento-civil/imagem-12.jpg",
+    "/images/servicos/casamento-civil/imagem-13.JPG",
+    "/images/servicos/casamento-civil/imagem-14.jpg",
+    "/images/servicos/casamento-civil/imagem-15.JPG",
+    "/images/servicos/casamento-civil/imagem-16.JPG"
   ],
   "eventos": [
-    "/images/servicos/eventos/temporaria-01.jpg",
-    "/images/servicos/eventos/temporaria-02.jpg",
-    "/images/servicos/eventos/temporaria-03.jpg",
-    "/images/servicos/eventos/temporaria-04.jpg"
+    "/images/servicos/eventos/imagem-01.JPG",
+    "/images/servicos/eventos/imagem-02.JPG",
+    "/images/servicos/eventos/imagem-03.JPG",
+    "/images/servicos/eventos/imagem-04.JPG",
+    "/images/servicos/eventos/imagem-05.JPG",
+    "/images/servicos/eventos/imagem-06.jpg",
+    "/images/servicos/eventos/imagem-07.jpg",
+    "/images/servicos/eventos/imagem-08.JPG",
+    "/images/servicos/eventos/imagem-09.jpg",
+    "/images/servicos/eventos/imagem-10.jpg",
+    "/images/servicos/eventos/imagem-11.jpg",
+    "/images/servicos/eventos/imagem-12.jpg"
   ],
   "gestante": [
     "/images/servicos/gestante/imagem-01.jpg",
     "/images/servicos/gestante/imagem-02.jpg",
-    "/images/servicos/gestante/temporaria-01.jpg",
-    "/images/servicos/gestante/temporaria-02.jpg"
+    "/images/servicos/gestante/imagem-03.jpg",
+    "/images/servicos/gestante/imagem-04.jpg",
+    "/images/servicos/gestante/imagem-05.jpg",
+    "/images/servicos/gestante/imagem-06.jpg",
+    "/images/servicos/gestante/imagem-07.jpg",
+    "/images/servicos/gestante/imagem-08.jpg",
+    "/images/servicos/gestante/imagem-09.JPG",
+    "/images/servicos/gestante/imagem-10.JPG",
+    "/images/servicos/gestante/imagem-11.JPG",
+    "/images/servicos/gestante/imagem-12.JPG"
   ],
   "smash-the-cake": [
     "/images/servicos/smash-the-cake/imagem-01.jpg",
     "/images/servicos/smash-the-cake/imagem-02.jpg",
-    "/images/servicos/smash-the-cake/temporaria-01.jpg",
-    "/images/servicos/smash-the-cake/temporaria-02.jpg"
+    "/images/servicos/smash-the-cake/imagem-03.jpg",
+    "/images/servicos/smash-the-cake/imagem-04.jpg"
   ],
   "ensaio-kids": [
     "/images/servicos/ensaio-kids/imagem-01.jpg",
-    "/images/servicos/ensaio-kids/temporaria-01.jpg",
-    "/images/servicos/ensaio-kids/temporaria-02.jpg",
-    "/images/servicos/ensaio-kids/temporaria-03.jpg"
+    "/images/servicos/ensaio-kids/imagem-02.jpg",
+    "/images/servicos/ensaio-kids/imagem-03.jpg",
+    "/images/servicos/ensaio-kids/imagem-04.jpg",
+    "/images/servicos/ensaio-kids/imagem-05.jpg",
+    "/images/servicos/ensaio-kids/imagem-06.jpg",
+    "/images/servicos/ensaio-kids/imagem-07.jpg",
+    "/images/servicos/ensaio-kids/imagem-08.jpg"
+  ],
+  "newborn": [
+    "/images/servicos/newborn/imagem-01.jpg",
+    "/images/servicos/newborn/imagem-02.jpg",
+    "/images/servicos/newborn/imagem-03.jpg",
+    "/images/servicos/newborn/imagem-04.jpg",
+    "/images/servicos/newborn/imagem-05.JPG",
+    "/images/servicos/newborn/imagem-06.JPG",
+    "/images/servicos/newborn/imagem-07.JPG",
+    "/images/servicos/newborn/imagem-08.jpg",
+    "/images/servicos/newborn/imagem-09.JPG"
   ],
   "casal-familiar": [
     "/images/servicos/casal-familiar/imagem-01.jpg",
     "/images/servicos/casal-familiar/imagem-02.jpg",
-    "/images/servicos/casal-familiar/imagem-03.jpeg",
-    "/images/servicos/casal-familiar/temporaria-01.jpg"
+    "/images/servicos/casal-familiar/imagem-03.jpg",
+    "/images/servicos/casal-familiar/imagem-04.jpg",
+    "/images/servicos/casal-familiar/imagem-05.jpg",
+    "/images/servicos/casal-familiar/imagem-06.jpg",
+    "/images/servicos/casal-familiar/imagem-07.jpg",
+    "/images/servicos/casal-familiar/imagem-08.jpg",
+    "/images/servicos/casal-familiar/imagem-09.jpg",
+    "/images/servicos/casal-familiar/imagem-10.jpg",
+    "/images/servicos/casal-familiar/imagem-11.jpg",
+    "/images/servicos/casal-familiar/imagem-12.jpg",
+    "/images/servicos/casal-familiar/imagem-13.JPG",
+    "/images/servicos/casal-familiar/imagem-14.jpg"
   ],
   "datas-comemorativas": [
-    "/images/servicos/datas-comemorativas/temporaria-01.jpg",
-    "/images/servicos/datas-comemorativas/temporaria-02.jpg",
-    "/images/servicos/datas-comemorativas/temporaria-03.jpg",
-    "/images/servicos/datas-comemorativas/temporaria-04.jpg"
+    "/images/servicos/datas-comemorativas/imagem-01.jpg",
+    "/images/servicos/datas-comemorativas/imagem-02.jpg",
+    "/images/servicos/datas-comemorativas/imagem-03.jpg",
+    "/images/servicos/datas-comemorativas/imagem-04.jpg",
+    "/images/servicos/datas-comemorativas/imagem-05.jpg",
+    "/images/servicos/datas-comemorativas/imagem-06.jpg",
+    "/images/servicos/datas-comemorativas/imagem-07.jpg",
+    "/images/servicos/datas-comemorativas/imagem-08.jpg",
+    "/images/servicos/datas-comemorativas/imagem-09.jpg",
+    "/images/servicos/datas-comemorativas/imagem-10.jpg",
+    "/images/servicos/datas-comemorativas/imagem-11.jpg",
+    "/images/servicos/datas-comemorativas/imagem-12.jpg"
   ],
   "bday": [
-    "/images/servicos/bday/imagem-01.jpg",
-    "/images/servicos/bday/temporaria-01.jpg",
-    "/images/servicos/bday/temporaria-02.jpg",
-    "/images/servicos/bday/temporaria-03.jpg"
+    "/images/servicos/bday/imagem-01.png",
+    "/images/servicos/bday/imagem-02.png",
+    "/images/servicos/bday/imagem-03.png",
+    "/images/servicos/bday/imagem-04.jpg",
+    "/images/servicos/bday/imagem-05.jpg",
+    "/images/servicos/bday/imagem-06.jpg",
+    "/images/servicos/bday/imagem-07.png"
   ]
 }

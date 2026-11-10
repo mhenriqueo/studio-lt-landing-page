@@ -9,7 +9,7 @@
 // You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 import { resolve } from "node:path";
-import { readFileSync, watch } from "node:fs";
+import { existsSync, readFileSync, watch } from "node:fs";
 import { galleryCategories, galleryDirectory, generateGalleryManifest } from "./scripts/generate-gallery-manifest.mjs";
 
 export default defineConfig({
@@ -46,10 +46,10 @@ export default defineConfig({
             environment.hot.send({ type: "full-reload" });
           }
         };
-        const watchers = galleryCategories.map((category) => watch(
-          resolve(server.config.root, galleryDirectory, category),
-          update,
-        ));
+        const watchers = galleryCategories
+          .map((category) => resolve(server.config.root, galleryDirectory, category))
+          .filter((directory) => existsSync(directory))
+          .map((directory) => watch(directory, update));
         server.httpServer?.once("close", () => {
           watchers.forEach((watcher) => watcher.close());
         });
