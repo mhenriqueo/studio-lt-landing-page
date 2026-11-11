@@ -8,22 +8,27 @@ import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 
-const TITLE = "Studio L & T Fotografia - Registrando momentos, criando memórias";
-const DESC =
-  "Ensaios fotográficos profissionais para eternizar momentos únicos. Ensaio Kids, Gestantes, Smash the Cake, Aniversários e Eventos.";
+import { servicos } from "@/data/servicos";
+import { businessJsonLd, HOME_DESCRIPTION, HOME_IMAGE, HOME_TITLE, pageHead, SITE_NAME } from "@/lib/seo";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: TITLE },
-      { name: "description", content: DESC },
-      { name: "keywords", content: "fotografia, ensaio fotográfico, ensaio kids, gestantes, smash the cake, aniversários, eventos, estúdio fotográfico" },
-      { property: "og:title", content: TITLE },
-      { property: "og:description", content: "Ensaios fotográficos profissionais para eternizar momentos únicos." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-  }),
+  head: () => {
+    const head = pageHead({
+      title: HOME_TITLE,
+      description: HOME_DESCRIPTION,
+      path: "/",
+      image: HOME_IMAGE,
+      imageAlt: `${SITE_NAME} - Estúdio de Fotografia em Osasco - SP`,
+    });
+    return {
+      ...head,
+      meta: [
+        ...head.meta,
+        { name: "keywords", content: "fotografia, ensaio fotográfico, ensaio kids, gestantes, smash the cake, aniversários, eventos, estúdio fotográfico" },
+      ],
+      scripts: [{ type: "application/ld+json", children: JSON.stringify(businessJsonLd(servicos)) }],
+    };
+  },
   component: Index,
 });
 

@@ -31,9 +31,9 @@ const serviceDetails: Omit<Servico, "fotos">[] = [
     titulo: "Fotografia de Casamento",
     descricao:
       "O dia mais importante da sua vida merece ser eternizado. Cobertura completa e emocionante do seu casamento.",
-    metaTitulo: "Fotografia de Casamento | Studio L & T",
+    metaTitulo: "Fotografia de Casamento em Osasco | Studio L & T",
     metaDescricao:
-      "Fotografia de casamento no Studio L & T: cerimônia, festa e cada emoção do grande dia registrados com sensibilidade.",
+      "Fotografia de casamento em Osasco/SP pelo STUDIO L & T: cerimônia, festa e cada emoção do grande dia registrados com sensibilidade.",
     previa: `${base}/casamento/temporaria-01.jpg`,
   },
   {
@@ -42,9 +42,9 @@ const serviceDetails: Omit<Servico, "fotos">[] = [
     titulo: "Fotografia de Casamento Civil",
     descricao:
       "O sim que muda tudo, registrado com delicadeza. Cobertura da cerimônia civil, dos detalhes e dos abraços de quem estava lá.",
-    metaTitulo: "Fotografia de Casamento Civil | Studio L & T",
+    metaTitulo: "Fotografia de Casamento Civil em Osasco | Studio L & T",
     metaDescricao:
-      "Fotografia de casamento civil no Studio L & T: cerimônia no cartório, assinaturas, alianças e a emoção do sim registrados com sensibilidade.",
+      "Fotografia de casamento civil em Osasco/SP: cerimônia no cartório, assinaturas, alianças e a emoção do sim registrados pelo STUDIO L & T.",
     previa: `${base}/casamento-civil/temporaria-01.jpg`,
   },
   {
@@ -53,9 +53,9 @@ const serviceDetails: Omit<Servico, "fotos">[] = [
     titulo: "Fotografia de Eventos",
     descricao:
       "Cada detalhe imortalizado. Cobertura fotográfica completa para casamentos, festas e celebrações.",
-    metaTitulo: "Fotografia de Eventos | Studio L & T",
+    metaTitulo: "Fotografia de Eventos em Osasco | Studio L & T",
     metaDescricao:
-      "Cobertura fotográfica de eventos pelo Studio L & T: casamentos, festas e celebrações registrados em cada detalhe.",
+      "Cobertura fotográfica de eventos em Osasco/SP pelo STUDIO L & T: casamentos, festas e celebrações registrados em cada detalhe.",
     previa: `${base}/eventos/temporaria-01.jpg`,
   },
   {
@@ -64,9 +64,9 @@ const serviceDetails: Omit<Servico, "fotos">[] = [
     titulo: "Fotografia Gestante",
     descricao:
       "A beleza da vida que cresce. Ensaios delicados e afetivos para eternizar a espera do seu bebê.",
-    metaTitulo: "Fotografia Gestante | Studio L & T",
+    metaTitulo: "Ensaio Gestante em Osasco | Studio L & T",
     metaDescricao:
-      "Ensaios de gestante delicados e emocionantes no Studio L & T, em Osasco. Eternize a espera do seu bebê.",
+      "Ensaio gestante em Osasco/SP no STUDIO L & T: fotografias delicadas e afetivas para eternizar a espera do seu bebê.",
     previa: `${base}/gestante/imagem-01.jpg`,
   },
   {
@@ -75,9 +75,9 @@ const serviceDetails: Omit<Servico, "fotos">[] = [
     titulo: "Smash the Cake",
     descricao:
       "Diversão e bagunça memoráveis. Um ensaio leve e divertido para celebrar o primeiro aninho.",
-    metaTitulo: "Smash the Cake | Studio L & T",
+    metaTitulo: "Smash the Cake em Osasco | Studio L & T",
     metaDescricao:
-      "Ensaio Smash the Cake no Studio L & T: cenários encantadores e muita diversão para celebrar o primeiro ano.",
+      "Ensaio Smash the Cake em Osasco/SP no STUDIO L & T: um ensaio leve e divertido para celebrar o primeiro aninho do seu bebê.",
     previa: `${base}/smash-the-cake/imagem-01.jpg`,
   },
   {
@@ -86,9 +86,9 @@ const serviceDetails: Omit<Servico, "fotos">[] = [
     titulo: "Ensaio Kids",
     descricao:
       "Momentos de pureza e alegria. Retratos espontâneos que guardam a essência de cada fase da infância.",
-    metaTitulo: "Ensaio Kids | Studio L & T",
+    metaTitulo: "Ensaio Kids em Osasco | Studio L & T",
     metaDescricao:
-      "Ensaios infantis no Studio L & T: retratos espontâneos e cheios de alegria para guardar cada fase da infância.",
+      "Ensaio infantil em Osasco/SP no STUDIO L & T: retratos espontâneos e cheios de alegria que guardam cada fase da infância.",
     previa: `${base}/ensaio-kids/imagem-01.jpg`,
   },
   {
@@ -97,9 +97,9 @@ const serviceDetails: Omit<Servico, "fotos">[] = [
     titulo: "Ensaio Newborn",
     descricao:
       "Os primeiros dias, para sempre. Um ensaio sereno e acolhedor que guarda cada detalhe do seu recém-nascido.",
-    metaTitulo: "Ensaio Newborn | Studio L & T",
+    metaTitulo: "Ensaio Newborn em Osasco | Studio L & T",
     metaDescricao:
-      "Ensaio newborn no Studio L & T: fotografias delicadas e acolhedoras dos primeiros dias do seu bebê.",
+      "Ensaio newborn em Osasco/SP no STUDIO L & T: fotografias serenas e acolhedoras dos primeiros dias do seu recém-nascido.",
     previa: `${base}/newborn/temporaria-01.jpg`,
   },
   {
@@ -108,9 +108,9 @@ const serviceDetails: Omit<Servico, "fotos">[] = [
     titulo: "Ensaios de Casal e Familiar",
     descricao:
       "Amor e união em cada clique. Ensaios que celebram a conexão entre quem você mais ama.",
-    metaTitulo: "Ensaios de Casal e Familiar | Studio L & T",
+    metaTitulo: "Ensaio de Casal e Família em Osasco | Studio L & T",
     metaDescricao:
-      "Ensaios de casal e família no Studio L & T: amor, união e conexão registrados com sensibilidade.",
+      "Ensaios de casal e família em Osasco/SP no STUDIO L & T: amor, união e a conexão entre quem você mais ama em cada clique.",
     previa: `${base}/casal-familiar/imagem-03.jpeg`,
   },
   {
@@ -119,9 +119,9 @@ const serviceDetails: Omit<Servico, "fotos">[] = [
     titulo: "Ensaios de Datas Comemorativas",
     descricao:
       "Cada data especial merece um registro único. Ensaios temáticos para Natal, Páscoa, Dia das Mães e outras celebrações.",
-    metaTitulo: "Ensaios de Datas Comemorativas | Studio L & T",
+    metaTitulo: "Ensaios de Datas Comemorativas em Osasco | Studio L & T",
     metaDescricao:
-      "Ensaios temáticos de datas comemorativas no Studio L & T: Natal, Páscoa, Dia das Mães e outras datas especiais.",
+      "Ensaios temáticos em Osasco/SP no STUDIO L & T para Natal, Páscoa, Dia das Mães e outras datas comemorativas especiais.",
     previa: `${base}/datas-comemorativas/temporaria-01.jpg`,
   },
   {
@@ -130,9 +130,9 @@ const serviceDetails: Omit<Servico, "fotos">[] = [
     titulo: "B-Day",
     descricao:
       "Celebrações que merecem ser lembradas. Registramos a alegria, os detalhes e a emoção de cada aniversário.",
-    metaTitulo: "Fotografia de Aniversário B-Day | Studio L & T",
+    metaTitulo: "Fotografia de Aniversário B-Day em Osasco | Studio L & T",
     metaDescricao:
-      "Fotografia de aniversários no Studio L & T: alegria, detalhes e emoção registrados em cada celebração.",
+      "Fotografia de aniversário em Osasco/SP no STUDIO L & T: a alegria, os detalhes e a emoção de cada celebração B-Day registrados.",
     previa: `${base}/bday/imagem-01.jpg`,
   },
 ];

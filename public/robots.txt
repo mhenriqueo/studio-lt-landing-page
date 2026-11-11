@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://studio-lt-landing-page.vercel.app/sitemap.xml

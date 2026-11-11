@@ -6,6 +6,7 @@ import FloatingButtons from "@/components/FloatingButtons";
 import GaleriaFotos from "@/components/GaleriaFotos";
 import { getServico } from "@/data/servicos";
 import { WHATSAPP_URL } from "@/data/contato";
+import { servicoHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/servicos/$slug")({
   loader: ({ params }) => {
@@ -16,16 +17,7 @@ export const Route = createFileRoute("/servicos/$slug")({
   head: ({ loaderData }) => {
     const s = loaderData?.servico;
     if (!s) return { meta: [{ title: "Página não encontrada | Studio L & T" }, { name: "robots", content: "noindex" }] };
-    return {
-      meta: [
-        { title: s.metaTitulo },
-        { name: "description", content: s.metaDescricao },
-        { property: "og:title", content: s.metaTitulo },
-        { property: "og:description", content: s.metaDescricao },
-        { property: "og:type", content: "website" },
-        { name: "twitter:card", content: "summary_large_image" },
-      ],
-    };
+    return servicoHead(s);
   },
   component: ServicoPage,
 });

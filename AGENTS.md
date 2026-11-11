@@ -32,3 +32,7 @@ use the editor.
 ## Gallery architecture
 - Generate the gallery inventory from each known `public/images/servicos/<slug>/` folder with the build-time Vite plugin; SSR and browser must only read the resulting JSON, because deployed servers and browsers cannot enumerate public folders.
 - Keep service text, previews and existing photo captions separate from the generated inventory; new files inherit category captions, preserving editorial content without requiring manual image registration.
+
+## SEO
+- Build every public route's head through the shared SEO helper so canonical, og:url and og:image stay absolute on the official domain and the JSON-LD only uses data already present in the project.
+- Serve the sitemap as static `public/sitemap.xml` listing every canonical public URL; `src/test/sitemap-robots.test.ts` compares it with the services list, so adding a category must add its URL there.
