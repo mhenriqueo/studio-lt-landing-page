@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 
 import { servicos } from "@/data/servicos";
-import { businessJsonLd, HOME_DESCRIPTION, HOME_IMAGE, HOME_TITLE, pageHead, SITE_NAME } from "@/lib/seo";
+import { businessJsonLd, HOME_DESCRIPTION, HOME_IMAGE, HOME_TITLE, pageHead, SITE_NAME, websiteJsonLd } from "@/lib/seo";
 
 export const Route = createFileRoute("/")({
   head: () => {
@@ -26,7 +26,10 @@ export const Route = createFileRoute("/")({
         ...head.meta,
         { name: "keywords", content: "fotografia, ensaio fotográfico, ensaio kids, gestantes, smash the cake, aniversários, eventos, estúdio fotográfico" },
       ],
-      scripts: [{ type: "application/ld+json", children: JSON.stringify(businessJsonLd(servicos)) }],
+      scripts: [
+        { type: "application/ld+json", children: JSON.stringify(websiteJsonLd()) },
+        { type: "application/ld+json", children: JSON.stringify(businessJsonLd(servicos)) },
+      ],
     };
   },
   component: Index,

@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import { servicos } from "@/data/servicos";
-import { businessJsonLd, HOME_TITLE, pageHead, servicoHead, HOME_DESCRIPTION } from "@/lib/seo";
+import { businessJsonLd, HOME_TITLE, pageHead, servicoHead, HOME_DESCRIPTION, websiteJsonLd } from "@/lib/seo";
 
 const meta = (head: ReturnType<typeof pageHead>, key: string) =>
   head.meta.find((m) => ("property" in m && m.property === key) || ("name" in m && m.name === key));
@@ -84,5 +84,22 @@ describe("SEO", () => {
     });
     expect(data).not.toHaveProperty("openingHours");
     expect(data.hasOfferCatalog.itemListElement).toHaveLength(servicos.length);
+  });
+
+  it("brand is written exactly 'Studio L & T' (never all caps) in every page's metadata and structured data", () => {
+    const heads = [pageHead({ title: HOME_TITLE, description: HOME_DESCRIPTION, path: "/" }), ...servicos.map(servicoHead)];
+    const all = JSON.stringify([heads, businessJsonLd(servicos), websiteJsonLd()]);
+    expect(all).not.toContain("STUDIO");
+    expect(HOME_DESCRIPTION).toContain("Studio L & T");
+    for (const s of servicos) expect(s.metaDescricao).toContain("Studio L & T");
+    expect(businessJsonLd(servicos).name).toBe("Studio L & T");
+  });
+
+  it("home WebSite structured data uses the official name and URL", () => {
+    expect(websiteJsonLd()).toMatchObject({
+      "@type": "WebSite",
+      name: "Studio L & T",
+      url: "https://studio-lt-landing-page.vercel.app/",
+    });
   });
 });

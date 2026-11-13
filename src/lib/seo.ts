@@ -6,11 +6,11 @@ import { INSTAGRAM_URL, WHATSAPP_URL } from "@/data/contato";
 import type { Servico } from "@/data/servicos";
 
 export const SITE_URL = "https://studio-lt-landing-page.vercel.app";
-export const SITE_NAME = "STUDIO L & T";
+export const SITE_NAME = "Studio L & T";
 
 export const HOME_TITLE = "Studio L & T | Estúdio de Fotografia e Ensaios em Osasco";
 export const HOME_DESCRIPTION =
-  "STUDIO L & T, estúdio de fotografia em Osasco/SP. Casamento, casamento civil, eventos, gestante, newborn, kids, smash the cake, família, datas comemorativas e B-Day.";
+  "O Studio L & T é um estúdio de fotografia em Osasco/SP especializado em casamentos, eventos e ensaios de gestante, newborn, infantil, família e datas especiais.";
 export const HOME_IMAGE = "/images/hero/imagem-principal.jpeg";
 
 /** Converte um caminho do site ("/servicos/casamento") em URL absoluta oficial. */
@@ -102,5 +102,18 @@ export function businessJsonLd(servicos: Servico[]) {
         },
       })),
     },
+  };
+}
+
+/** Dados estruturados WebSite da página inicial: informa ao Google o nome oficial do site. */
+export function websiteJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${SITE_URL}/#website`,
+    name: SITE_NAME,
+    url: `${SITE_URL}/`,
+    inLanguage: "pt-BR",
+    publisher: { "@id": `${SITE_URL}/#studio` },
   };
 }
